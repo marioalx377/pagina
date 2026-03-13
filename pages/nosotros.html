@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosotros - COSAMI</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .page-hero {
+      background: linear-gradient(135deg, var(--blue-dark), var(--blue-mid));
+      color: var(--white);
+      padding: 80px 0 60px;
+      text-align: center;
+    }
+    .page-hero h1 { font-size: 2.8rem; font-weight: 900; margin-bottom: 12px; }
+    .page-hero p  { opacity: 0.85; font-size: 1.1rem; max-width: 520px; margin: 0 auto; }
+
+    .about-section { padding: 80px 0; }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .about-img-placeholder {
+      background: var(--gray-light);
+      border-radius: var(--radius-lg);
+      height: 360px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 6rem;
+      color: var(--blue-dark);
+      opacity: 0.2;
+    }
+    .about-text h2 { font-size: 2rem; font-weight: 800; color: var(--blue-dark); margin-bottom: 16px; }
+    .about-text p  { color: var(--gray-text); line-height: 1.8; margin-bottom: 14px; }
+
+    .mv-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      padding: 80px 0;
+      background: var(--gray-light);
+    }
+    .mv-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s;
+    }
+    .mv-card:hover { transform: translateY(-6px); }
+    .mv-card .mv-icon { font-size: 2.5rem; margin-bottom: 16px; }
+    .mv-card h3 { font-size: 1.3rem; font-weight: 800; color: var(--blue-dark); margin-bottom: 12px; }
+    .mv-card p  { color: var(--gray-text); line-height: 1.75; }
+
+    .values-section { padding: 80px 0; }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .value-item {
+      text-align: center;
+      padding: 28px 16px;
+      border-radius: var(--radius);
+      border: 2px solid var(--gray-mid);
+      transition: var(--transition);
+    }
+    .value-item:hover { border-color: var(--green); background: rgba(61,185,79,0.04); transform: translateY(-4px); }
+    .value-item i { font-size: 2rem; color: var(--blue-dark); margin-bottom: 12px; display: block; }
+    .value-item h4 { font-size: 0.95rem; font-weight: 700; color: var(--dark); }
+
+    @media (max-width: 768px) {
+      .about-grid, .mv-grid { grid-template-columns: 1fr; }
+      .values-grid { grid-template-columns: repeat(2, 1fr); }
+      .mv-grid { padding: 40px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header incluido desde index -->
+  <header style="background:var(--blue-dark);padding:16px 0;">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
+      <a href="../index.html" style="display:flex;align-items:center;gap:10px;color:white;font-size:1.4rem;font-weight:900;">
+        <i class="fas fa-leaf" style="color:var(--green)"></i> COSAMI
+      </a>
+      <a href="../index.html" class="btn btn-green">← Volver al inicio</a>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <h1>Quiénes Somos</h1>
+      <p>Más de 25 años construyendo bienestar financiero para los guatemaltecos</p>
+    </div>
+  </div>
+
+  <section class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-placeholder"><i class="fas fa-building"></i></div>
+        <div class="about-text">
+          <h2>Nuestra Historia</h2>
+          <p>COSAMI fue fundada en 1999 por un grupo de trabajadores comprometidos con el bienestar económico de sus familias y comunidades. Desde entonces, hemos crecido hasta convertirnos en una de las cooperativas de ahorro y crédito más sólidas de Guatemala.</p>
+          <p>Con más de 45,000 asociados activos en todo el país, ofrecemos productos financieros diseñados para satisfacer las necesidades reales de las personas: desde cuentas de ahorro hasta préstamos empresariales.</p>
+          <p>Nuestro compromiso es claro: democratizar el acceso a servicios financieros de calidad para todos los guatemaltecos, sin importar su condición socioeconómica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="mv-grid">
+      <div class="mv-card">
+        <div class="mv-icon">🎯</div>
+        <h3>Misión</h3>
+        <p>Brindar servicios financieros de calidad que mejoren la calidad de vida de nuestros asociados y sus familias, promoviendo el desarrollo económico sostenible de las comunidades en las que operamos.</p>
+      </div>
+      <div class="mv-card">
+        <div class="mv-icon">🌟</div>
+        <h3>Visión</h3>
+        <p>Ser la cooperativa de ahorro y crédito líder en Guatemala, reconocida por su solidez financiera, innovación tecnológica y compromiso con el bienestar integral de nuestros asociados para el año 2030.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="values-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Lo que nos guía</span>
+        <h2>Nuestros Valores</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-item"><i class="fas fa-handshake"></i><h4>Solidaridad</h4></div>
+        <div class="value-item"><i class="fas fa-shield-alt"></i><h4>Integridad</h4></div>
+        <div class="value-item"><i class="fas fa-eye"></i><h4>Transparencia</h4></div>
+        <div class="value-item"><i class="fas fa-users"></i><h4>Trabajo en Equipo</h4></div>
+        <div class="value-item"><i class="fas fa-lightbulb"></i><h4>Innovación</h4></div>
+        <div class="value-item"><i class="fas fa-heart"></i><h4>Compromiso Social</h4></div>
+        <div class="value-item"><i class="fas fa-award"></i><h4>Excelencia</h4></div>
+        <div class="value-item"><i class="fas fa-leaf"></i><h4>Sostenibilidad</h4></div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#0a1f40;color:rgba(255,255,255,0.7);text-align:center;padding:20px 0;font-size:0.85rem;">
+    &copy; 2025 COSAMI - Cooperativa de Ahorro y Crédito. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

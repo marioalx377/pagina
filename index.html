@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAN PEDRO - Cooperativa de Ahorro y Crédito</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER / NAVBAR ========== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <div class="logo-icon">
+          <i class="fas fa-leaf"></i>
+          <i class="fas fa-circle logo-coin"></i>
+        </div>
+        <span class="logo-text">SAN PEDRO</span>
+      </div>
+
+      <nav class="navbar" id="navbar">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li class="dropdown">
+            <a href="#nosotros" class="nav-link">Nosotros <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#historia">Historia</a></li>
+              <li><a href="#mision">Misión y Visión</a></li>
+              <li><a href="#equipo">Consejo de Administración</a></li>
+              <li><a href="#equipo">Vigilancia</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#ahorros" class="nav-link">Ahorros <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#ahorro-corriente">Ahorro Corriente</a></li>
+              <li><a href="#ahorro-programado">Ahorro Programado</a></li>
+              <li><a href="#deposito-plazo">Depósito a Plazo</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#prestamos" class="nav-link">Préstamos <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#prestamo-personal">Personal</a></li>
+              <li><a href="#prestamo-vivienda">Vivienda</a></li>
+              <li><a href="#prestamo-vehiculo">Vehículo</a></li>
+              <li><a href="#prestamo-empresarial">Empresarial</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#recursos" class="nav-link">Recursos <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#memorias">Memorias de Labores</a></li>
+              <li><a href="#estatutos">Estatutos</a></li>
+              <li><a href="#tarifario">Tarifario</a></li>
+            </ul>
+          </li>
+          <li><a href="#beneficios" class="nav-link">Beneficios</a></li>
+          <li><a href="#agencias" class="nav-link">Agencias</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-buttons">
+        <a href="#micoope" class="btn btn-outline">Mi Coope en línea</a>
+        <a href="#contacto" class="btn btn-primary">Contáctanos</a>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO SLIDER ========== -->
+  <section class="hero" id="inicio">
+    <div class="slider" id="slider">
+
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <div class="container slide-content">
+          <div class="slide-text">
+            <h1 class="slide-title">Bienvenido</h1>
+            <p class="slide-desc">En COSAMI encontrarás productos y servicios financieros diseñados según tus necesidades y las de tu familia.</p>
+            <a href="#nosotros" class="btn btn-green">Conoce más de nosotros</a>
+          </div>
+          <div class="slide-image">
+            <div class="img-circle">
+              <img src="assets/images/hero1.jpg" alt="Asociados COSAMI" onerror="this.style.display='none'" />
+              <div class="img-placeholder"><i class="fas fa-users"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <div class="container slide-content">
+          <div class="slide-text">
+            <h1 class="slide-title">Tu Ahorro, Nuestro Compromiso</h1>
+            <p class="slide-desc">Más de 25 años respaldando el bienestar financiero de nuestros asociados con tasas competitivas y confianza.</p>
+            <a href="#ahorros" class="btn btn-green">Ver productos de ahorro</a>
+          </div>
+          <div class="slide-image">
+            <div class="img-circle">
+              <div class="img-placeholder"><i class="fas fa-piggy-bank"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <div class="container slide-content">
+          <div class="slide-text">
+            <h1 class="slide-title">Préstamos a tu Medida</h1>
+            <p class="slide-desc">Financiamos tus proyectos personales, de vivienda y empresariales con condiciones flexibles y tasas accesibles.</p>
+            <a href="#prestamos" class="btn btn-green">Solicitar préstamo</a>
+          </div>
+          <div class="slide-image">
+            <div class="img-circle">
+              <div class="img-placeholder"><i class="fas fa-hand-holding-usd"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide">
+        <div class="container slide-content">
+          <div class="slide-text">
+            <h1 class="slide-title">MiCoope en Línea</h1>
+            <p class="slide-desc">Accede a tu cuenta, realiza transacciones y consulta tus movimientos desde cualquier lugar, las 24 horas.</p>
+            <a href="#micoope" class="btn btn-green">Acceder ahora</a>
+          </div>
+          <div class="slide-image">
+            <div class="img-circle">
+              <div class="img-placeholder"><i class="fas fa-mobile-alt"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controles del slider -->
+    <button class="slider-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+    <button class="slider-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+    <div class="slider-dots" id="sliderDots"></div>
+  </section>
+
+  <!-- ========== ACCESOS RÁPIDOS ========== -->
+  <section class="quick-access">
+    <div class="container">
+      <div class="cards-grid">
+
+        <div class="quick-card" data-href="#cotizador">
+          <div class="card-icon">
+            <i class="fas fa-calculator"></i>
+          </div>
+          <h3>COTIZADOR DE PRÉSTAMOS</h3>
+          <a href="#cotizador" class="btn btn-green">¡Cotizar ahora!</a>
+        </div>
+
+        <div class="quick-card" data-href="#memorias">
+          <div class="card-icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h3>MEMORIAS DE LABORES</h3>
+          <a href="#memorias" class="btn btn-green">Ver más</a>
+        </div>
+
+        <div class="quick-card" data-href="#micoope">
+          <div class="card-icon">
+            <i class="fas fa-laptop"></i>
+          </div>
+          <h3>MICOOPE EN LÍNEA</h3>
+          <a href="#micoope" class="btn btn-green">Ir a Plataforma</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ESTADÍSTICAS ========== -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number" data-target="45000">0</span>
+          <span class="stat-label">Asociados Activos</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="25">0</span>
+          <span class="stat-label">Años de Experiencia</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="12">0</span>
+          <span class="stat-label">Agencias en el País</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="98">0</span>
+          <span class="stat-label">% Satisfacción</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICIOS ========== -->
+  <section class="services-section" id="nosotros">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nuestros Productos</span>
+        <h2>Servicios Financieros para Ti</h2>
+        <p>Diseñados para el bienestar de nuestros asociados y sus familias</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon blue">
+            <i class="fas fa-piggy-bank"></i>
+          </div>
+          <h3>Ahorro Corriente</h3>
+          <p>Cuenta de ahorro flexible con disponibilidad inmediata de tu dinero. Sin costo de mantenimiento.</p>
+          <a href="#ahorros" class="service-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon green">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Depósito a Plazo</h3>
+          <p>Invierte tu dinero a plazo fijo con las mejores tasas del mercado. Desde 30 días hasta 5 años.</p>
+          <a href="#ahorros" class="service-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon blue">
+            <i class="fas fa-home"></i>
+          </div>
+          <h3>Préstamo de Vivienda</h3>
+          <p>Financia la construcción o compra de tu hogar con plazos de hasta 20 años y tasas preferenciales.</p>
+          <a href="#prestamos" class="service-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon green">
+            <i class="fas fa-car"></i>
+          </div>
+          <h3>Préstamo de Vehículo</h3>
+          <p>Estrena el vehículo que siempre has querido. Financiamos hasta el 80% del valor con plazos cómodos.</p>
+          <a href="#prestamos" class="service-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon blue">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3>Préstamo Empresarial</h3>
+          <p>Capital de trabajo e inversión para tu negocio. Impulsamos el crecimiento empresarial de nuestros asociados.</p>
+          <a href="#prestamos" class="service-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon green">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Seguro de Vida</h3>
+          <p>Protege a tu familia con nuestro seguro de vida incluido en todos los créditos sin costo adicional.</p>
+          <a href="#beneficios" class="service-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COTIZADOR ========== -->
+  <section class="calculator-section" id="cotizador">
+    <div class="container">
+      <div class="calc-wrapper">
+        <div class="calc-info">
+          <span class="section-tag light">Herramienta</span>
+          <h2>Cotizador de Préstamos</h2>
+          <p>Calcula tu cuota mensual de forma rápida y sencilla. Obtén una estimación al instante sin compromisos.</p>
+          <ul class="calc-features">
+            <li><i class="fas fa-check"></i> Resultado inmediato</li>
+            <li><i class="fas fa-check"></i> Sin consulta al historial crediticio</li>
+            <li><i class="fas fa-check"></i> Personalizable según tus necesidades</li>
+          </ul>
+        </div>
+
+        <div class="calc-form" id="calculatorForm">
+          <h3>Simula tu préstamo</h3>
+
+          <div class="form-group">
+            <label>Tipo de préstamo</label>
+            <select id="loanType">
+              <option value="">Selecciona un tipo</option>
+              <option value="personal">Personal</option>
+              <option value="vivienda">Vivienda</option>
+              <option value="vehiculo">Vehículo</option>
+              <option value="empresarial">Empresarial</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Monto deseado (Q)</label>
+            <input type="number" id="loanAmount" placeholder="Ej: 50,000" min="1000" />
+          </div>
+
+          <div class="form-group">
+            <label>Plazo (meses): <span id="plazoDisplay">24</span></label>
+            <input type="range" id="loanTerm" min="6" max="240" value="24" step="6" />
+            <div class="range-labels"><span>6 meses</span><span>240 meses</span></div>
+          </div>
+
+          <button class="btn btn-primary full-width" onclick="calcularCuota()">Calcular cuota</button>
+
+          <div class="calc-result" id="calcResult" style="display:none;">
+            <div class="result-item">
+              <span>Cuota mensual estimada:</span>
+              <strong id="resultCuota">Q 0.00</strong>
+            </div>
+            <div class="result-item">
+              <span>Total a pagar:</span>
+              <strong id="resultTotal">Q 0.00</strong>
+            </div>
+            <p class="result-note">* Esta es una estimación. La tasa puede variar según tu perfil crediticio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BENEFICIOS ========== -->
+  <section class="benefits-section" id="beneficios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">¿Por qué elegirnos?</span>
+        <h2>Beneficios de ser Asociado</h2>
+        <p>Más que una cooperativa, somos tu aliado financiero</p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <div class="benefit-icon"><i class="fas fa-percentage"></i></div>
+          <h4>Tasas Competitivas</h4>
+          <p>Las mejores tasas de ahorro y crédito del mercado cooperativista.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon"><i class="fas fa-lock"></i></div>
+          <h4>Tu Dinero Seguro</h4>
+          <p>Supervisados por BANASUPRO. Tu ahorro siempre está protegido.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon"><i class="fas fa-headset"></i></div>
+          <h4>Atención Personalizada</h4>
+          <p>Asesores dedicados a orientarte en cada decisión financiera.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h4>Banca Digital</h4>
+          <p>Gestiona tu cuenta desde el celular con nuestra app MiCoope.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon"><i class="fas fa-gift"></i></div>
+          <h4>Programa de Puntos</h4>
+          <p>Acumula puntos con tus transacciones y canjéalos por premios.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h4>Educación Financiera</h4>
+          <p>Talleres y recursos gratuitos para mejorar tu salud financiera.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AGENCIAS ========== -->
+  <section class="agencies-section" id="agencias">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Estamos cerca de ti</span>
+        <h2>Nuestras Agencias</h2>
+        <p>Encuéntranos en todo el país</p>
+      </div>
+
+      <div class="agencies-grid">
+        <div class="agency-card">
+          <div class="agency-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h4>Agencia Central</h4>
+          <p>6a Avenida 12-31, Zona 1<br/>Ciudad de Guatemala</p>
+          <span class="agency-hours"><i class="fas fa-clock"></i> Lun-Vie 8:00-17:00</span>
+          <a href="tel:+50222223333" class="agency-phone"><i class="fas fa-phone"></i> (502) 2222-3333</a>
+        </div>
+        <div class="agency-card">
+          <div class="agency-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h4>Agencia Xela</h4>
+          <p>4a Calle 12-11, Zona 3<br/>Quetzaltenango</p>
+          <span class="agency-hours"><i class="fas fa-clock"></i> Lun-Vie 8:00-17:00</span>
+          <a href="tel:+50277774444" class="agency-phone"><i class="fas fa-phone"></i> (502) 7777-4444</a>
+        </div>
+        <div class="agency-card">
+          <div class="agency-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h4>Agencia Cobán</h4>
+          <p>3a Avenida 1-15, Zona 2<br/>Alta Verapaz</p>
+          <span class="agency-hours"><i class="fas fa-clock"></i> Lun-Vie 8:00-17:00</span>
+          <a href="tel:+50279525252" class="agency-phone"><i class="fas fa-phone"></i> (502) 7952-5252</a>
+        </div>
+        <div class="agency-card">
+          <div class="agency-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h4>Agencia Escuintla</h4>
+          <p>2a Calle 4-20, Zona 1<br/>Escuintla</p>
+          <span class="agency-hours"><i class="fas fa-clock"></i> Lun-Vie 8:00-17:00</span>
+          <a href="tel:+50278881111" class="agency-phone"><i class="fas fa-phone"></i> (502) 7888-1111</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO ========== -->
+  <section class="contact-section" id="contacto">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <span class="section-tag light">¿Tienes dudas?</span>
+          <h2>Contáctanos</h2>
+          <p>Nuestro equipo está listo para ayudarte de lunes a viernes.</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <strong>Teléfono</strong>
+                <span>(502) 2222-3333</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Correo electrónico</strong>
+                <span>info@cosami.com.gt</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-whatsapp"></i>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>(502) 5555-6666</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <strong>Horario de atención</strong>
+                <span>Lun-Vie 8:00 – 17:00 hrs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" action="php/contact.php" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Nombre completo</label>
+              <input type="text" name="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label>Correo electrónico</label>
+              <input type="email" name="email" placeholder="tu@correo.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Teléfono</label>
+            <input type="tel" name="telefono" placeholder="(502) XXXX-XXXX" />
+          </div>
+          <div class="form-group">
+            <label>Asunto</label>
+            <select name="asunto">
+              <option value="">Selecciona un asunto</option>
+              <option value="ahorro">Información sobre ahorros</option>
+              <option value="prestamo">Solicitud de préstamo</option>
+              <option value="cuenta">Consulta de cuenta</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Mensaje</label>
+            <textarea name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">
+            <i class="fas fa-paper-plane"></i> Enviar mensaje
+          </button>
+          <div id="formMessage" class="form-message"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <i class="fas fa-leaf"></i>
+            <span>COSAMI</span>
+          </div>
+          <p>Cooperativa de Ahorro y Crédito comprometida con el bienestar financiero de sus asociados desde 1999.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Productos</h4>
+          <ul>
+            <li><a href="#ahorros">Ahorro Corriente</a></li>
+            <li><a href="#ahorros">Ahorro Programado</a></li>
+            <li><a href="#ahorros">Depósito a Plazo</a></li>
+            <li><a href="#prestamos">Préstamo Personal</a></li>
+            <li><a href="#prestamos">Préstamo de Vivienda</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Información</h4>
+          <ul>
+            <li><a href="#nosotros">Quiénes Somos</a></li>
+            <li><a href="#memorias">Memorias de Labores</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#agencias">Agencias</a></li>
+            <li><a href="pages/privacidad.html">Política de Privacidad</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Regulación</h4>
+          <p class="footer-reg">Supervisada por el Instituto Nacional de Cooperativas (INACOP) y la Federación de Cooperativas de Ahorro y Crédito (FENACOAC).</p>
+          <div class="footer-badges">
+            <span class="badge">INACOP</span>
+            <span class="badge">FENACOAC</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 COSAMI - Cooperativa de Ahorro y Crédito. Todos los derechos reservados.</p>
+        <div class="footer-links">
+          <a href="pages/privacidad.html">Privacidad</a>
+          <a href="pages/terminos.html">Términos</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button class="back-to-top" id="backToTop" title="Volver arriba">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/slider.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
