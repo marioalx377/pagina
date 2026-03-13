@@ -1,4 +1,4 @@
-# COSAMI - Sitio Web Cooperativa
+# MARIO - Sitio Web Cooperativa
 
 ## Estructura del proyecto
 
