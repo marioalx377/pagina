@@ -1,4 +1,4 @@
-# COSAMI – Documentación Técnica del Proyecto
+# MARIO – Documentación Técnica del Proyecto
 
 ---
 
